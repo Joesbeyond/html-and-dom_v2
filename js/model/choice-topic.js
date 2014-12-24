@@ -1,5 +1,5 @@
-var _ = require("../lib/lodash-2.4.1/lodash");
-var ChoiceTopic = require('./topic');
+var _ = require("lodash");
+var Topic = require('./topic');
 function ChoiceTopic(name, answer, scoreUnit) {
     Topic.call(this, name, answer, scoreUnit);
 }
@@ -17,3 +17,4 @@ ChoiceTopic.prototype.calculate = function (document) {
         this.score = this.answer === checkedElement.value ? this.scoreUnit : 0;
     }
 };
+module.exports = ChoiceTopic;

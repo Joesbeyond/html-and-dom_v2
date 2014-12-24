@@ -8,4 +8,4 @@ function Topic(name, answer, scoreUnit) {
 Topic.prototype.calculate = function (document) {
     // need to overriding this function.
 };
-module.export = Topic;
+module.exports = Topic;

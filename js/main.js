@@ -1,13 +1,16 @@
-var _ = require("./lib/lodash-2.4.1/lodash");
+var _ = require("lodash");
+var AnswerChecker = require('./model/answer-checker');
+var ChoiceTopic = require('./model/choice-topic');
+var MultipleChoiceTopic =  require('./model/multiple-choice-topic');
+var TrueOrFalseTopic =  require('./model/true-or-false-topic');
+var ShortAnswerTopic =  require('./model/short-answer-topic');
 
 $(document).ready(function() {
   $('#button').on('click', function() {
     submit_onclick();
+    return false;
   });
 });
-
-var AnswerChecker = require('./answer-checker');
-
 function submit_onclick() {
 
     var requiredInputs = [
@@ -38,7 +41,6 @@ function submit_onclick() {
         totalScoreElement.innerText = answerChecker.getTotalScore();
     }
 
-    return false;
 }
 
 function hasEmptyRequiredInput(inputs) {

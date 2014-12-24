@@ -1,5 +1,5 @@
-var _ = require("../lib/lodash-2.4.1/lodash");
-var FillInTopic = require('./topic');
+var _ = require("lodash");
+var Topic = require('./topic');
 function FillInTopic(name, answer, scoreUnit, inputsCount) {
 
     Topic.call(this, name, answer, scoreUnit);

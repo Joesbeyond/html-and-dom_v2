@@ -5,23 +5,17 @@
     <title >统一建模语言理论测试</title>
 
     <!-- add javascript libs at here -->
-    <script type="text/javascript" src="lib/lodash-2.4.1/lodash.compat.js"></script>
+    <script type="text/javascript" src="lib/jquery-2.1.3.js"></script>
+
     <!-- add javascript sources at here -->
-    <script type="text/javascript" src="js/model/topic.js"></script>
-    <script type="text/javascript" src="js/model/fill-in-topic.js"></script>
-    <script type="text/javascript" src="js/model/choice-topic.js"></script>
-    <script type="text/javascript" src="js/model/multiple-choice-topic.js"></script>
-    <script type="text/javascript" src="js/model/true-or-false-topic.js"></script>
-    <script type="text/javascript" src="js/model/short-answer-topic.js"></script>
-    <script type="text/javascript" src="js/model/answer-checker.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-   
+    <script type="text/javascript" src="js/test.js"></script>
+
 </head>
 <body>
 
 <form action="#" method="post" autocomplete="off">
-    <div class="container">    
-       
+    <div class="container">
+
             <div class="row">
                 <div class="col-md-12 text-center h2">
                     <strong><span class="label label-info">统一建模语言理论测试</span></strong>
@@ -32,7 +26,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <label class="control-label label-default">
-                                考试科目：
+                                考试科目： 6
                             </label>
                             <u>统一建模语言</u>
                         </div>
@@ -51,7 +45,7 @@
                     </div>
                 </div>
             </div>
-    
+
     <div class="panel panel-primary">
             <div class="panel-body">
                 <div class="row form-inline">
@@ -76,7 +70,7 @@
                 </div>
             </div>
         </div>
-    
+
 
     <section>
         <div class="panel panel-default">
@@ -122,7 +116,7 @@
             <label class="control-label label-warning">
                      <h4>二、选择题（每题10分，共20分）</h4>
                  </label>
-               
+
             </div>
             <div class="panel-body">
                 <ol>
@@ -200,9 +194,9 @@
                 <div class="panel-heading">
                     <label class="control-label label-info">
                     <h4>三、多项选择题（每题10分，共20分）</h4>
-            
+
                     </label>
-                </div>  
+                </div>
             <div class="panel-body">
                 <ol>
                     <li>
@@ -322,7 +316,7 @@
             <div class="panel-heading">
                 <label class="control-label label-danger">
                     <h4>五、简答题（每题20分，共20分）</h4>
-                </label>  
+                </label>
             </div>
             <div class="panel-body">
                 <ul>
@@ -346,9 +340,9 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <span class="glyphicon glyphicon-star"> </span>
-                <input id="button" class="btn btn-primary btn-lg"  value="提交成绩" type="submit" onclick="return submit_onclick()">
+                <input id="button" class="btn btn-primary btn-lg"  value="提交成绩" type="submit" >
                 </input>
-                <span class="glyphicon glyphicon-star"> </span> 
+                <span class="glyphicon glyphicon-star"> </span>
             </div>
         </div>
     </footer>

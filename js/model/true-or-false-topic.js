@@ -1,4 +1,5 @@
-var TrueOrFalseTopic = require('./topic');
+var _ = require("lodash");
+var Topic = require('./topic');
 function TrueOrFalseTopic(name, answer, scoreUnit) {
     Topic.call(this, name, answer, scoreUnit);
 }
@@ -29,3 +30,4 @@ TrueOrFalseTopic.prototype.calculate = function (document) {
         this.score = this.answer === convertAnswerToBoolean(checkedElement.value) ? this.scoreUnit : 0;
     }
 };
+module.exports = TrueOrFalseTopic;

@@ -1,5 +1,5 @@
 var _ = require("lodash");
-var MultipleChoiceTopic = require('./topic');
+var Topic = require('./topic');
 function MultipleChoiceTopic(name, answer, scoreUnit) {
     Topic.call(this, name, answer, scoreUnit);
 }
@@ -29,3 +29,4 @@ MultipleChoiceTopic.prototype.calculate = function (document) {
 
     this.score = isCorrectAnswer ? this.scoreUnit : 0;
 };
+module.exports = MultipleChoiceTopic;

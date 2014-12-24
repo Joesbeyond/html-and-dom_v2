@@ -1,4 +1,5 @@
-var _ = require("../lib/lodash-2.4.1/lodash");
+var _ = require("lodash");
+
 function AnswerChecker(document, topics) {
     this.document = document;
     this.topics = topics;
@@ -17,4 +18,4 @@ AnswerChecker.prototype.getTotalScore = function () {
         return scoreA + scoreB;
     });
 };
-module.export = AnswerChecker;
+module.exports = AnswerChecker;

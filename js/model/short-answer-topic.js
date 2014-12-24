@@ -1,4 +1,4 @@
-var ShortAnswerTopic = require('./topic');
+var Topic = require('./topic');
 function ShortAnswerTopic(name, answer, scoreUnit) {
     Topic.call(this, name, answer, scoreUnit);
 }
@@ -14,3 +14,4 @@ ShortAnswerTopic.prototype.calculate = function (document) {
         this.score = this.answer === textareaElement.value.trim() ? this.scoreUnit : 0;
     }
 };
+module.exports = ShortAnswerTopic;
