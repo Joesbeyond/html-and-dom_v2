@@ -1,0 +1,21 @@
+{
+  "name": "html-and-dom_v2",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Joesbeyond/html-and-dom_v2",
+  "authors": [
+    "joesbeyond <joesbeyond@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "jquery": "~2.1.3",
+    "lodash": "~2.4.1"
+  }
+}
